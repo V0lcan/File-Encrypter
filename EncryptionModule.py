@@ -27,7 +27,7 @@ def encrypt_image(img, fernet_key):
 def encrypt_file(filename, fernet_key):
     kind = filetype.guess(filename)
     if kind and kind.mime.startswith('image/'): # If the file is an image, encrypt it as an image.
-        encrypt_image(filename)
+        encrypt_image(filename, fernet_key)
     
     else:
         with open(filename, 'r') as file: # Read file contents.
