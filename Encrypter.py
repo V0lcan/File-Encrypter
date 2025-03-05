@@ -6,7 +6,6 @@ import EncryptionModule
 # TODO:
 # - ADD a way to manually select key file/path to create key file in.
 # - FIX bug where the select file button crashed the whole program. (Might be OS X specific)
-# - FIX Tkinter currently throws exception error when the program is finished encrypting/decrypting a folder. It still works, but it's annoying.
 
 fernet = EncryptionModule.select_key_file('file-encrypter.key')
 
