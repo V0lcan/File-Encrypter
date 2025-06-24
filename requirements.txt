@@ -1,0 +1,13 @@
+cffi==1.17.1
+cryptography==43.0.3
+cryptography-fernet==0.1.0
+filetype==1.2.0
+plyer==2.1.0
+pycparser==2.22
+pync==2.0.3
+PyQt5==5.15.11
+PyQt5-Qt5==5.15.15
+PyQt5_sip==12.15.0
+python-dateutil==2.9.0.post0
+six==1.17.0
+tkinterdnd2==0.4.2

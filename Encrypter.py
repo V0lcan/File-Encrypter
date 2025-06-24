@@ -13,7 +13,13 @@ fernet = EncryptionModule.select_key_file('file-encrypter.key')
 def select_file():
     filepath.delete(0, tk.END) # Clear text field.
 
-    filepath_select = tk.filedialog.askopenfilename(initialdir=".", title="Select file", filetypes=(("all files", "*.*"), ("image files", "*.png;*.jpg;*.jpeg;*.gif;*.bmp;*.tiff;*.webp"), ("text files", "*.txt;*.docx;*.doc;*.pdf;*.rtf;*.odt;*.html;*.xml;*.csv;*.json;*.log;*.md;*.tex;*.yaml;*.yml;*.ini;*.cfg;*.conf;*.properties;*.env;*.sh;*.bat;*.cmd;*.ps1;*.psm1;*.psd1;*.ps1xml;*.pssc;*.psc1")))
+    filetypes = [
+        ("all files", "*.*"),
+        ("image files", "*.png;*.jpg;*.jpeg;*.gif;*.bmp;*.tiff;*.webp"),
+        ("text files", "*.txt;*.docx;*.doc;*.pdf;*.rtf;*.odt;*.html;*.xml;*.csv;*.json;*.log;*.md;*.tex;*.yaml;*.yml;*.ini;*.cfg;*.conf;*.properties;*.env;*.sh;*.bat;*.cmd;*.ps1;*.psm1;*.psd1;*.ps1xml;*.pssc;*.psc1")
+    ]
+
+    filepath_select = tk.filedialog.askopenfilename(initialdir=".", title="Select file", filetypes=filetypes)
     return filepath_select
 
 def select_directory():
