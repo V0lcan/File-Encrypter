@@ -1,14 +1,26 @@
-# File encrypter
-This is a simple file and image encrypter/decrypter.
+# File Encrypter
 
-**Important:**
-After a file has been encrypted, do not delete the .key file since that will delete the key
-needed to decrypt the file again.
+A simple Python application for encrypting and decrypting files and folders, including images and text files.  
+Supports both a modern PyQt5 GUI and a classic Tkinter interface.
 
-**How to use:**
-1. Run script
-2. Press the "Select file" button to select a file to encrypt (or copy & paste the filepath)
-3. Press encrypt
+---
 
-**How to decrypt file:**
-Same as previous but press decrypt instead.
+## Features
+
+- **Encrypt/Decrypt any file or folder**: Works with images, text, and most file types.
+- **Easy-to-use GUI**: Choose between PyQt5 or Tkinter interfaces.
+- **Secure encryption**: Uses [Fernet](https://cryptography.io/en/latest/fernet/) symmetric encryption from the `cryptography` library.
+- **Key management**: Automatically generates and stores a key file for encryption/decryption.
+- **Batch operations**: Encrypt or decrypt entire directories at once.
+
+---
+
+## Getting Started
+
+### Prerequisites
+
+- Python 3.7+
+- Install dependencies:
+  ```sh
+  pip install cryptography pyqt5 filetype tqdm
+  ```
